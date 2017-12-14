@@ -1,0 +1,10 @@
+.table td{
+    width:20%;
+    background-color:rgba(97, 154, 230, 0.445);
+    transition: background-color 0.5s ease-in;
+}
+
+.table td:hover{
+    background-color: royalblue;
+    transform: scale(1.5);
+}

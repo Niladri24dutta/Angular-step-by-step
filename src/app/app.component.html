@@ -1,12 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="width:100%;text-align:center" class="jumbotron col-md-8">
   <img width="300" alt="Angular Logo" src="../assets/logo.png"> <br>
   <h1>
     Table of contents
   </h1>
-  <table>
-
-  </table>
+</div><br>
+<div class="container col-md-10 col-md-offset-2">
+    <table class="table table-striped" style="width:80%">
+        <tbody>
+          <tr>
+            <td><a href="#" [routerLink]="['/component']"><pre>Components</pre></a></td>
+            <td><a href="#" [routerLink]="['/component']"><pre>Directive</pre></a></td>
+            <td><a href="#" [routerLink]="['/component']"><pre>Events and @HostListener</pre></a></td>
+            <td><a href="#" [routerLink]="['/component']"><pre>@HostListener Cont</pre></a></td>
+          </tr>
+        </tbody> 
+      </table>
 </div>
+<br>
+<div class='container col-md-10 col-md-offset-2'>
+    <router-outlet></router-outlet>
+ </div>
+
 
 
