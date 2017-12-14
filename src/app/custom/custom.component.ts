@@ -9,17 +9,17 @@ import { DomSanitizer,SafeHtml } from '@angular/platform-browser'
 })
 export class CustomComponent implements OnInit {
   sourceCodeType: string;
-  private minDate : Date = new Date(2017,11,10);
-  private maxDate:Date = new Date(2019,11,10);
-  private bsValue:Date = new Date();
-  private bsConfig :Partial<BsDatepickerConfig>;
-  private colorTheme:string = "theme-dark-blue";
-  private selectedCountry:string = '';
-  private buttonText:string = '';
-  private showCodeBlock:boolean = false;
-  private sourceCodeBlock:string = '';
-  private description:string = '';
-  private countries:string[] = ['United kingdom','United states','India','Japan','Denmark','France','Italy','Brazil'];
+  public minDate : Date = new Date(2017,11,10);
+  public maxDate:Date = new Date(2019,11,10);
+  public bsValue:Date = new Date();
+  public bsConfig :Partial<BsDatepickerConfig>;
+  public colorTheme:string = "theme-dark-blue";
+  public selectedCountry:string = '';
+  public buttonText:string = '';
+  public showCodeBlock:boolean = false;
+  public sourceCodeBlock:string = '';
+  public description:string = '';
+  public countries:string[] = ['United kingdom','United states','India','Japan','Denmark','France','Italy','Brazil'];
   constructor(private sanitizer:DomSanitizer) {
     this.bsConfig = Object.assign({},{containerClass: this.colorTheme});
     this.buttonText = this.showCodeBlock ? "Hide" : "Show";
