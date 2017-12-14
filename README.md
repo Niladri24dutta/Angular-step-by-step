@@ -1,4 +1,8 @@
-# AngularStepByStep
+# Angular 5 Step By Step
+
+#Sample screenshot
+
+[[https://github.com/Niladri24dutta/Angular-step-by-step/blob/master/Untitled.png|alt=screen]]
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 
