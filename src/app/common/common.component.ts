@@ -10,9 +10,9 @@ export class CommonComponent implements OnInit {
  
   @Input() showCodeSnippet:boolean;
   @Input() inputDesc:string;
-  @Input() formattedOutput:SafeHtml;
+  @Input() formattedOutput:string;
 
-  constructor(private sanitizer:DomSanitizer) { 
+  constructor() { 
    
   }
 

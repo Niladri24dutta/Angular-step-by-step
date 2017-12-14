@@ -45,20 +45,26 @@ export class CustomComponent implements OnInit {
 
   getSourceCode(option:string){
     if(option === 'datepicker'){
-      this.sourceCodeBlock = `<input type="text"
+      this.sourceCodeBlock = `HTML : <input type="text"
       class="form-control"
       [minDate]="minDate"
       [maxDate]="maxDate"
       [bsConfig]="bsConfig"
       #datepicker="bsDatepicker"
-      bsDatepicker [(ngModel)]="bsValue" name="mydatepicker"> and Typescript:  private minDate : Date = new Date(2017,11,10);
+      bsDatepicker [(ngModel)]="bsValue" name="mydatepicker"> 
+and Typescript : 
+      private minDate : Date = new Date(2017,11,10);
       private maxDate:Date = new Date(2019,11,10);
       private bsValue:Date = new Date();
       private bsConfig :Partial<BsDatepickerConfig>;`;
     }
     else if(option === 'typeahead'){
-      this.sourceCodeBlock = ``;
+      this.sourceCodeBlock = `       HTML : <input class="form-control" [(ngModel)]="selectedCountry" [typeahead]="countries" name="country"> 
+       Typescript : private selectedCountry:string = '';
+       private countries:string[] = ['United kingdom','United states','India','Japan','Denmark','France','Italy','Brazil'];
+      `;
     }
-    return this.sanitizer.bypassSecurityTrustHtml(this.sourceCodeBlock);
+    //return this.sanitizer.bypassSecurityTrustHtml(this.sourceCodeBlock);
+    return this.sourceCodeBlock;
   }
 }

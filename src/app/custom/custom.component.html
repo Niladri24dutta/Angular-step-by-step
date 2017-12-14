@@ -1,11 +1,11 @@
 <div class="panel">
-  <h4>A custom component with bootstrap datepicker and typeahead</h4><br>
+  <h4>A custom component with bootstrap datepicker and typeahead</h4>
 </div>
 <div class="row col-xs-6">
     <button  type="button" class="btn btn-primary" (click)="displayCodeBlock()">
       {{buttonText}} code
     </button>
-</div> <br> <br>
+</div> <br>
 <common-codesnippet [showCodeSnippet]="showCodeBlock" [formattedOutput] = "getSourceCode('datepicker')" [inputDesc] = "getCodeDescription('datepicker')"></common-codesnippet>
 <form (ngSubmit)="onSubmit()">
 <div class="row">
@@ -25,6 +25,8 @@
         <pre class="code-preview">The selected date is {{bsValue}}</pre>
      </div> 
   </div>
+  <br>
+  <common-codesnippet [showCodeSnippet]="showCodeBlock" [formattedOutput] = "getSourceCode('typeahead')" [inputDesc] = "getCodeDescription('typeahead')"></common-codesnippet>
   <div class="row">
       <div style="padding-left:15px;">
           <h3>Please type and select a country:</h3>
