@@ -12,6 +12,8 @@ import { CustomComponent } from './custom/custom.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TypeaheadModule } from 'ngx-bootstrap';
 import { CommonComponent } from './common/common.component';
+import { DirComponent } from './dir/dir.component';
+import {BlueColorDirective} from './dir/blue-color.directive'
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { CommonComponent } from './common/common.component';
     AppComponent,
     CustomComponent,
     WelcomeComponent,
-    CommonComponent
+    CommonComponent,
+    DirComponent,
+    BlueColorDirective
   ],
   imports: [
     BrowserModule,

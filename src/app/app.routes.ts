@@ -1,6 +1,7 @@
 import {Routes,RouterModule} from '@angular/router';
 import {CustomComponent} from './custom/custom.component';
 import {WelcomeComponent} from './welcome/welcome.component'
+import {DirComponent} from './dir/dir.component'
 
 
 const routes:Routes = [
@@ -12,6 +13,10 @@ const routes:Routes = [
     {
         path:'component',
         component:CustomComponent
+    },
+    {
+        path:'directive',
+        component:DirComponent
     },
     {
         path:'',
