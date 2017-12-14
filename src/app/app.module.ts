@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { CustomComponent } from './custom/custom.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TypeaheadModule } from 'ngx-bootstrap';
+import { CommonComponent } from './common/common.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    CommonComponent
   ],
   imports: [
     BrowserModule,

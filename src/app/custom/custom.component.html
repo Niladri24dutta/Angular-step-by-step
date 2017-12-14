@@ -1,6 +1,12 @@
 <div class="panel">
-  <h4>A custom component with bootstrap datepicker and typeahead</h4>
+  <h4>A custom component with bootstrap datepicker and typeahead</h4><br>
 </div>
+<div class="row col-xs-6">
+    <button  type="button" class="btn btn-primary" (click)="displayCodeBlock()">
+      {{buttonText}} code
+    </button>
+</div> <br> <br>
+<common-codesnippet [showCodeSnippet]="showCodeBlock" [formattedOutput] = "getSourceCode('datepicker')" [inputDesc] = "getCodeDescription('datepicker')"></common-codesnippet>
 <form (ngSubmit)="onSubmit()">
 <div class="row">
    <div style="padding-left:15px;">
