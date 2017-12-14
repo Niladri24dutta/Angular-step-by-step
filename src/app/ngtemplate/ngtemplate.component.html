@@ -1,0 +1,38 @@
+<h3>ng-template with TemplateRef</h3> <br>
+
+<div *ngIf="visible;then evenClicked else oddClicked" class="panel" style="width:40%">
+  <strong>This is some default text</strong>
+</div> <br>
+<div class="row col-md-2">
+  <button class="btn btn-primary" (click)="toggleDisplay()">Click here to toggle</button>
+</div>
+<br><br>
+<ng-template #oddClicked>
+  <div class="alert alert-success" style="width:40%">
+    This is shown for odd no of clicks 
+  </div>
+</ng-template>
+
+<ng-template #evenClicked>
+    <div class="alert alert-danger" style="width:40%">
+      This is shown for even no of clicks 
+    </div>
+</ng-template> 
+
+  <div class="alert alert-warning" style="width:40%">
+    <strong>Total click : {{count}}</strong>
+  </div>
+  
+<br>
+<h3>ng-template with ngIf</h3> <br>
+<div class="row col-md-2">
+    <button class="btn btn-primary" (click)="toggleLoad()">Click here to {{loadText}}</button>
+</div> <br> <br>
+<div class="alert-success" *ngIf="loadingdone else loading" style="width:40%">
+    Loading done
+ </div>
+ <ng-template #loading>
+    <div class="alert alert-warning" style="width:40%">
+      Loading ...
+    </div>
+</ng-template> 

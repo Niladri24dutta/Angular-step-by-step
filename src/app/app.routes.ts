@@ -3,6 +3,7 @@ import {CustomComponent} from './custom/custom.component';
 import {WelcomeComponent} from './welcome/welcome.component'
 import {DirComponent} from './dir/dir.component'
 import {HostlistenerComponent} from './hostlistener/hostlistener.component'
+import {NgtemplateComponent} from './ngtemplate/ngtemplate.component'
 
 
 const routes:Routes = [
@@ -22,6 +23,10 @@ const routes:Routes = [
     {
         path:'hostlistener',
         component:HostlistenerComponent
+    },
+    {
+        path:'ngtemplate',
+        component:NgtemplateComponent
     },
     {
         path:'',
