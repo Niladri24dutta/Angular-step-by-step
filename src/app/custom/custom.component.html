@@ -1,3 +1,44 @@
-<p>
-  custom works!
-</p>
+<div class="panel">
+  <h4>A custom component with bootstrap datepicker and typeahead</h4>
+</div>
+<div class="row col-xs-6">
+    <button  type="button" class="btn btn-primary" (click)="displayCodeBlock()">
+      {{buttonText}} code
+    </button>
+</div> <br>
+<common-codesnippet [showCodeSnippet]="showCodeBlock" [formattedOutput] = "getSourceCode('datepicker')" [inputDesc] = "getCodeDescription('datepicker')"></common-codesnippet>
+<form (ngSubmit)="onSubmit()">
+<div class="row">
+   <div style="padding-left:15px;">
+     <h3>Please select a date :</h3>
+   </div>
+    <div class="col-xs-6 col-6 col-md-4 form-group">
+      <input type="text"
+             class="form-control"
+             [minDate]="minDate"
+             [maxDate]="maxDate"
+             [bsConfig]="bsConfig"
+             #datepicker="bsDatepicker"
+             bsDatepicker [(ngModel)]="bsValue" name="mydatepicker">
+    </div> 
+    <div *ngIf="bsValue" class="col-xs-6 col-6 col-md-7" >
+        <pre class="code-preview">The selected date is {{bsValue}}</pre>
+     </div> 
+  </div>
+  <br>
+  <common-codesnippet [showCodeSnippet]="showCodeBlock" [formattedOutput] = "getSourceCode('typeahead')" [inputDesc] = "getCodeDescription('typeahead')"></common-codesnippet>
+  <div class="row">
+      <div style="padding-left:15px;">
+          <h3>Please type and select a country:</h3>
+      </div>
+      <div class="col-xs-6 col-6 col-md-4 form-group">
+          <input class="form-control" [(ngModel)]="selectedCountry" [typeahead]="countries" name="country">   
+      </div>
+      <div *ngIf="selectedCountry" class="col-xs-6 col-6 col-md-7" >
+          <pre class="code-preview">The selected country is {{selectedCountry | json}}</pre>
+       </div>
+  </div>
+   
+</form>
+
+  

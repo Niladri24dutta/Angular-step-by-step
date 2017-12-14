@@ -5,18 +5,21 @@ import {ReactiveFormsModule} from '@angular/forms'
 import {ModalModule} from 'ngx-bootstrap/modal'
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown'
 import {TooltipModule} from 'ngx-bootstrap/tooltip'
-import {DatepickerModule} from 'ngx-bootstrap/datepicker';
+import {BsDatepickerModule } from 'ngx-bootstrap';
 import {routing} from './app.routes';
 import { AppComponent } from './app.component';
 import { CustomComponent } from './custom/custom.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { TypeaheadModule } from 'ngx-bootstrap';
+import { CommonComponent } from './common/common.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    CommonComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    DatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    TypeaheadModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
