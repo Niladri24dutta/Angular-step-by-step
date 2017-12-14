@@ -1,0 +1,14 @@
+<div class="row col-xs-6">
+<button  type="button" class="btn btn-primary" (click)="displayCodeBlock()">
+  {{buttonText}} code
+</button>
+</div> <br>
+<common-codesnippet [showCodeSnippet]="showCodeBlock" [formattedOutput] = "sourceCodeBlock" [inputDesc] = "desc"></common-codesnippet>
+
+<div class="panel" style="width:20%">
+    <button class="btn" blueColor>Click to {{text}}</button>   
+</div> <br>
+
+<div *ngIf="displayText" class="alert alter-success" style="width:40%">
+ This message was shown due to <pre>@HostListener 'click' event handling</pre>
+</div>

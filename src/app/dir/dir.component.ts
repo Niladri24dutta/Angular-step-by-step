@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-dir',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dir.component.css']
 })
 export class DirComponent implements OnInit {
+ 
   sourceCodeBlock: string ='';
   desc: string = '';
   buttonText: string = '';

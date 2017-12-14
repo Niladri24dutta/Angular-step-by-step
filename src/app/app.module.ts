@@ -13,7 +13,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { TypeaheadModule } from 'ngx-bootstrap';
 import { CommonComponent } from './common/common.component';
 import { DirComponent } from './dir/dir.component';
-import {BlueColorDirective} from './dir/blue-color.directive'
+import {BlueColorDirective} from './dir/blue-color.directive';
+import { HostlistenerComponent } from './hostlistener/hostlistener.component'
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {BlueColorDirective} from './dir/blue-color.directive'
     WelcomeComponent,
     CommonComponent,
     DirComponent,
-    BlueColorDirective
+    BlueColorDirective,
+    HostlistenerComponent
   ],
   imports: [
     BrowserModule,
