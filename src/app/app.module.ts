@@ -10,6 +10,7 @@ import {routing} from './app.routes';
 import { AppComponent } from './app.component';
 import { CustomComponent } from './custom/custom.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { TypeaheadModule } from 'ngx-bootstrap';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    TypeaheadModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

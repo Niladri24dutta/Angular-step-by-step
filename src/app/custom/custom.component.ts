@@ -12,7 +12,8 @@ export class CustomComponent implements OnInit {
   private bsValue:Date = new Date();
   private bsConfig :Partial<BsDatepickerConfig>;
   private colorTheme:string = "theme-dark-blue";
-
+  private selectedCountry:string = '';
+  private countries:string[] = ['United kingdom','United states','India','Japan','Denmark','France','Italy','Brazil'];
   constructor() {
     this.bsConfig = Object.assign({},{containerClass: this.colorTheme})
    }
