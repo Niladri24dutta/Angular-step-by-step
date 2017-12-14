@@ -12,6 +12,10 @@ import { CustomComponent } from './custom/custom.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TypeaheadModule } from 'ngx-bootstrap';
 import { CommonComponent } from './common/common.component';
+import { DirComponent } from './dir/dir.component';
+import {BlueColorDirective} from './dir/blue-color.directive';
+import { HostlistenerComponent } from './hostlistener/hostlistener.component';
+import { NgtemplateComponent } from './ngtemplate/ngtemplate.component'
 
 
 @NgModule({
@@ -19,7 +23,11 @@ import { CommonComponent } from './common/common.component';
     AppComponent,
     CustomComponent,
     WelcomeComponent,
-    CommonComponent
+    CommonComponent,
+    DirComponent,
+    BlueColorDirective,
+    HostlistenerComponent,
+    NgtemplateComponent
   ],
   imports: [
     BrowserModule,

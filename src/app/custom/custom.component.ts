@@ -64,7 +64,6 @@ and Typescript :
        private countries:string[] = ['United kingdom','United states','India','Japan','Denmark','France','Italy','Brazil'];
       `;
     }
-    //return this.sanitizer.bypassSecurityTrustHtml(this.sourceCodeBlock);
     return this.sourceCodeBlock;
   }
 }
