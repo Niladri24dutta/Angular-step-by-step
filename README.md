@@ -2,6 +2,11 @@
 - A step by step tutorial of common features in angular 5 including interactive code snippets
 - this tutorial is build using `Typescript,Angular5,Angular cli 1.5.5,Bootstrap 3.3.7,ngx-bootstrap,ag-grid and Rxjs`
 - Samples for `Datepicker,Typeahead` components have been added so far.
+- Added continuous integration support with `Travis CI`
+
+# Current build status
+
+[![Build Status](https://travis-ci.org/Niladri24dutta/Angular-step-by-step.svg?branch=master)](https://travis-ci.org/Niladri24dutta/Angular-step-by-step)
 
 # Sample screenshot
 
